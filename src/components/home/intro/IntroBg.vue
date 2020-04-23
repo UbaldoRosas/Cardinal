@@ -10,10 +10,10 @@
 <script>
 import gsap from 'gsap'
 
-import Norte from '@/components/home/Norte.vue'
-import Sur from '@/components/home/Sur.vue'
-import Este from '@/components/home/Este.vue'
-import Oeste from '@/components/home/Oeste.vue'
+import Norte from '@/components/home/intro/Norte.vue'
+import Sur from '@/components/home/intro/Sur.vue'
+import Este from '@/components/home/intro/Este.vue'
+import Oeste from '@/components/home/intro/Oeste.vue'
 
 export default {
 	components: {

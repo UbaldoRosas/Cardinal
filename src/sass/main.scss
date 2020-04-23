@@ -1,28 +1,29 @@
 @charset 'UTF-8';
 // Sass utilities
-@import 'helpers/variables';
-@import 'helpers/functions';
-@import 'helpers/mixins';
-@import 'helpers/placeholders';
-@import 'helpers/animations';
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/animations";
 
 // Vendors and external stylesheets
 
 // Base stuff
-@import 'base/normalize';
-@import 'base/typography';
-@import 'base/helpers';
-@import 'base/basic';
-@import 'base/sprites';
+@import "base/normalize";
+@import "base/typography";
+@import "base/helpers";
+@import "base/basic";
+@import "base/sprites";
 
 // Components and modules
-@import 'components/forms';
-@import 'components/buttons';
-@import 'components/bg-text';
+@import "components/forms";
+@import "components/buttons";
+@import "components/bg-text";
+@import "components/project";
 
 // Layout related stylesheets
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/template';
+@import "layout/header";
+@import "layout/footer";
+@import "layout/template";
 
 // Page-specific stylesheets

@@ -1,3 +1,13 @@
+.title {
+	font-family: $base-font-bold;
+	color: $base-color;
+	@include fluid-type(90px, 40px);
+
+	&.light {
+		color: $white;
+	}
+}
+
 .link {
 	color: $base-color;
 	line-height: 1.86;
