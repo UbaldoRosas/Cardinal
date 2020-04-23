@@ -1,11 +1,14 @@
 // rutas
-$img_url: "../assets/img/";
-$font_url: "../assets/fonts/";
+$img_url: 'assets/';
+$font_url: 'assets/fonts/';
 
 // colores
-$base-color: #fff;
-$brand-color: #000;
+$white: #fff;
+$base-color: #000;
 
 // fuentes
-$base-font: "";
-$title-font: "";
+$base-font: 'gilroymedium';
+$base-font-bold: 'gilroybold';
+$base-font-black: 'gilroyextrabold';
+
+$gutter-x: 134;

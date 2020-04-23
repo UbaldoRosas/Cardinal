@@ -1,0 +1,16 @@
+.bg-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-family: $base-font-black;
+	// font-size: 470px;
+	line-height: 0.7;
+	-webkit-text-stroke: 1px $white;
+	@include fluid-type(470px, 140px);
+
+	.letter {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,9 @@
+.link {
+	color: $base-color;
+	line-height: 1.86;
+	@include fluid-type(20px, 15px);
+
+	&.light {
+		color: $white;
+	}
+}

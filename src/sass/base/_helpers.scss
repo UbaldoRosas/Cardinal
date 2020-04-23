@@ -4,158 +4,159 @@
 
 // Posicionamiento
 .pos {
-    &-r {
-        position: relative !important;
-    }
+	&-r {
+		position: relative !important;
+	}
 
-    &-a {
-        position: absolute !important;
-    }
+	&-a {
+		position: absolute !important;
+	}
 }
 
 // z-index
 .zi {
-    $indexes: (1, 2, 3);
+	$indexes: (1, 2, 3);
 
-    @each $index in $indexes {
-        &-#{$index} {
-            z-index: #{$index} !important;
-        }
-    }
+	@each $index in $indexes {
+		&-#{$index} {
+			z-index: #{$index} !important;
+		}
+	}
 }
 
 // Display
 .d {
-    &-none {
-        display: none !important;
-    }
+	&-none {
+		display: none !important;
+	}
 
-    &-ib {
-        display: inline-block !important;
-    }
+	&-ib {
+		display: inline-block !important;
+	}
 
-    &-b {
-        display: block !important;
-    }
+	&-b {
+		display: block !important;
+	}
 
-    &-flex {
-        display: flex !important;
-    }
+	&-flex {
+		display: flex !important;
+	}
 }
 
 // Flexbox parent
 .flex {
-    display: flex;
+	display: flex;
 
-    // wrap
-    &-wrap {
-        flex-wrap: wrap !important;
+	// wrap
+	&-wrap {
+		flex-wrap: wrap !important;
 
-        &-reverse {
-            flex-wrap: wrap-reverse !important;
-        }
-    }
+		&-reverse {
+			flex-wrap: wrap-reverse !important;
+		}
+	}
 
-    &-nowrap {
-        flex-wrap: nowrap !important;
-    }
+	&-nowrap {
+		flex-wrap: nowrap !important;
+	}
 
-    // flex-direction
-    &-row {
-        flex-direction: row !important;
+	// flex-direction
+	&-row {
+		flex-direction: row !important;
 
-        &-reverse {
-            flex-direction: row-reverse !important;
-        }
-    }
+		&-reverse {
+			flex-direction: row-reverse !important;
+		}
+	}
 
-    &-column {
-        flex-direction: column !important;
+	&-column {
+		flex-direction: column !important;
 
-        &-reverse {
-            flex-direction: column-reverse !important;
-        }
-    }
+		&-reverse {
+			flex-direction: column-reverse !important;
+		}
+	}
 
-    $aligns: (
-        //  sufijo   |  valor
-            "start" "flex-start",
-        "end" "flex-end",
-        "center" "center"
-    );
-    $name: 1;
-    $value: 2;
-    // example : .flex-justify-end : flex-end
+	$aligns: (
+		//  sufijo   |  valor
+			'start' 'flex-start',
+		'end' 'flex-end',
+		'center' 'center',
+		'between' 'space-between'
+	);
+	$name: 1;
+	$value: 2;
+	// example : .flex-justify-end : flex-end
 
-    // justify-content
-    &-justify {
-        // example : class="flex-justify-end"
-        @each $align in $aligns {
-            &-#{nth($align, $name)} {
-                justify-content: #{nth($align, $value)} !important;
-            }
-        }
-    }
+	// justify-content
+	&-justify {
+		// example : class="flex-justify-end"
+		@each $align in $aligns {
+			&-#{nth($align, $name)} {
+				justify-content: #{nth($align, $value)} !important;
+			}
+		}
+	}
 
-    // align-items
-    &-align {
-        // example : class="flex-align-center"
-        @each $align in $aligns {
-            &-#{nth($align, $name)} {
-                align-items: #{nth($align, $value)} !important;
-            }
-        }
-    }
+	// align-items
+	&-align {
+		// example : class="flex-align-center"
+		@each $align in $aligns {
+			&-#{nth($align, $name)} {
+				align-items: #{nth($align, $value)} !important;
+			}
+		}
+	}
 }
 
 // Texto
 .text {
-    &-center {
-        text-align: center !important;
-    }
+	&-center {
+		text-align: center !important;
+	}
 }
 
 // margin
 .m {
-    &-t {
-        &-0 {
-            margin-top: 0 !important;
-        }
-    }
+	&-t {
+		&-0 {
+			margin-top: 0 !important;
+		}
+	}
 
-    &-r {
-        &-0 {
-            margin-right: 0 !important;
-        }
-    }
+	&-r {
+		&-0 {
+			margin-right: 0 !important;
+		}
+	}
 
-    &-b {
-        &-0 {
-            margin-bottom: 0 !important;
-        }
-    }
+	&-b {
+		&-0 {
+			margin-bottom: 0 !important;
+		}
+	}
 
-    &-l {
-        &-0 {
-            margin-left: 0 !important;
-        }
-    }
+	&-l {
+		&-0 {
+			margin-left: 0 !important;
+		}
+	}
 
-    &-x {
-        &-0 {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
+	&-x {
+		&-0 {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
 
-        &-auto {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-    }
+		&-auto {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
 }
 
 // Elementos sin eventos
 .no-touch {
-    pointer-events: none;
-    user-select: none;
+	pointer-events: none;
+	user-select: none;
 }
