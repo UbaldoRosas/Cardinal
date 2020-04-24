@@ -1,0 +1,32 @@
+.projects__grid {
+    position: relative;
+    display: flex;
+    background: #000;
+    padding: 6.5% porcentaje($gutter-x, 1920) 3.25%;
+    margin-left: -4.5%;
+
+    .project {
+        position: static;
+        width: 100%;
+        padding: 0 0 0 2.5%;
+        text-shadow: 0px 0px 7px rgba(#000, 0.4);
+
+        .link {
+            color: $white;
+            text-shadow: 0px 0px 4px rgba(#000, 0.8);
+        }
+
+        &__title {
+            margin-top: 65%;
+            color: $white;
+
+            span {
+                white-space: nowrap;
+
+                &::before {
+                    background: $white;
+                }
+            }
+        }
+    }
+}

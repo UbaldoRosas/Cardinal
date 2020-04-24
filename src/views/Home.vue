@@ -28,7 +28,19 @@
 		</div>
 
 		<Project :project="projects.anteojeria" />
+
+		<ProjectsGrid>
+			<Project :project="projects.fotografia" />
+			<Project :project="projects.social" />
+		</ProjectsGrid>
+
 		<Project :project="projects.iconico" />
+
+		<ProjectsGrid>
+			<Project :project="projects.studio_visit" />
+			<Project :project="projects.codigo_pm" />
+		</ProjectsGrid>
+
 		<Project :project="projects.epets" />
 	</section>
 </template>
@@ -36,20 +48,41 @@
 <script>
 import IntroBg from '@/components/home/intro/IntroBg.vue'
 import Project from '@/components/home/Project.vue'
+import ProjectsGrid from '@/components/home/ProjectsGrid.vue'
 
 export default {
 	data() {
 		return {
 			projects: {
 				anteojeria: {
-					title: 'Anteojería<br/>de Barrio',
+					title: '<span>Anteojería<br/>de Barrio</span>',
 					services: ['Branding', 'Dirección de arte', 'Ecommerce'],
 					image: 'home/anteojeria.jpg'
+				},
+				fotografia: {
+					title: '<br/> <span>Fotografía</span>',
+					services: ['Branding', 'Dirección de arte'],
+					image: 'home/foto.jpg'
+				},
+				social: {
+					title: '<br/> <span>Social Media</span>',
+					services: ['Diseño gráfico', 'Dirección de arte'],
+					image: 'home/social.jpg'
 				},
 				iconico: {
 					title: '<br/> <span>Icónico</span>',
 					services: ['Branding', 'Dirección de arte', ' '],
 					image: 'home/iconico.jpg'
+				},
+				studio_visit: {
+					title: '<br/> <span>Studio Visit</span>',
+					services: ['Fotografía', 'Video'],
+					image: 'home/studio.jpg'
+				},
+				codigo_pm: {
+					title: '<br/> <span>Código PM</span>',
+					services: ['Diseño web', 'Dirección de arte'],
+					image: 'home/codigo.jpg'
 				},
 				epets: {
 					title: '<br/> <span>E-pets</span>',
@@ -61,7 +94,8 @@ export default {
 	},
 	components: {
 		IntroBg,
-		Project
+		Project,
+		ProjectsGrid
 	}
 }
 </script>

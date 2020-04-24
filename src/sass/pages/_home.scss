@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 // Sass utilities
-@import '../helpers/variables';
-@import '../helpers/functions';
-@import '../helpers/mixins';
+@import "../helpers/variables";
+@import "../helpers/functions";
+@import "../helpers/mixins";
 
 $padding-x: porcentaje($gutter-x, 1920);
 
