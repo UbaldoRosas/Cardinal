@@ -29,4 +29,14 @@
             }
         }
     }
+
+    @media all and (max-width: 768px) {
+        flex-wrap: wrap;
+
+        .project {
+            &:nth-last-child(1) {
+                padding-top: 6.5%;
+            }
+        }
+    }
 }

@@ -12,17 +12,8 @@
 					</div>
 					<IntroBg />
 				</div>
-				<div class="intro__footer flex flex-justify-between">
-					<div class="intro__contact flex flex-column">
-						<a href="tel:" class="link light">12 3456 7890</a>
-						<a href="mailto:joaquin@agenciacardinal.com" class="link light">joaquin@agenciacardinal.com</a>
-						<a href="mailto:anibal@agenciacardinal.com" class="link light">anibal@agenciacardinal.com</a>
-					</div>
-					<div class="intro__social flex">
-						<a href="#" class="intro__social-item link light">facebook</a>
-						<a href="#" class="intro__social-item link light">instagram</a>
-						<a href="#" class="intro__social-item link light">behance</a>
-					</div>
+				<div class="intro__footer">
+					<ContactLinks />
 				</div>
 			</article>
 		</div>

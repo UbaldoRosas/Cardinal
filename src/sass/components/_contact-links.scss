@@ -1,0 +1,57 @@
+.contact {
+	&__social {
+		&-item {
+			display: block;
+			padding: 10px;
+			margin-left: 27px;
+		}
+	}
+
+	&__logo {
+		display: none;
+		margin-left: 20px;
+	}
+
+	&__copyright {
+		display: none;
+		margin-top: 20px;
+		font-size: 14px;
+		color: #feffff;
+
+		br {
+			display: none;
+		}
+	}
+
+	@media all and (max-width: 768px) {
+		&__links {
+			flex-direction: column;
+		}
+
+		&__social {
+			flex-wrap: wrap;
+			margin: 10px 0 0 -10px;
+
+			&-item {
+				&:nth-child(1) {
+					margin-left: 0;
+				}
+			}
+		}
+
+		&__logo {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		&__copyright {
+			margin-top: 30px;
+			text-align: left !important;
+			line-height: 1.4;
+
+			br {
+				display: block;
+			}
+		}
+	}
+}

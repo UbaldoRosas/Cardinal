@@ -6,6 +6,9 @@
 			</div>
 		</header>
 		<router-view />
+		<footer class="footer">
+			<ContactLinks />
+		</footer>
 	</main>
 </template>
 

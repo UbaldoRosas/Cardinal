@@ -1,0 +1,15 @@
+.footer {
+	background: #000;
+	padding: 6.5% porcentaje($gutter-x, 1920);
+
+	.contact {
+		&__logo,
+		&__copyright {
+			display: block;
+		}
+	}
+
+	@media all and (max-width: 768px) {
+		padding: 48px porcentaje($gutter-x, 1920);
+	}
+}
