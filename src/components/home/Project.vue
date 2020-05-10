@@ -8,9 +8,12 @@
 			</div>
 			<div class="project__content pos-r zi-2">
 				<ul class="project__services">
-					<li class="link" v-for="service in project.services" :key="service">{{ service }}</li>
+					<li class="link" v-for="service in project.services" :key="service" v-html="service"></li>
 				</ul>
-				<h2 class="project__title title" v-html="project.title"></h2>
+				<div class="project__title">
+					<h2 class="title" v-html="project.title"></h2>
+					<a href="#" class="project__link link">Ver más <span class="project__link-arrow"></span></a>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -51,33 +51,33 @@ export default {
 					image: 'home/anteojeria.jpg'
 				},
 				fotografia: {
-					title: '<br/> <span>Fotografía</span>',
-					services: ['Branding', 'Dirección de arte'],
+					title: '<span>Fotografía</span>',
+					services: ['Branding', 'Dirección de arte', '<br>'],
 					image: 'home/foto.jpg'
 				},
 				social: {
-					title: '<br/> <span>Social Media</span>',
-					services: ['Diseño gráfico', 'Dirección de arte'],
+					title: '<span>Social Media</span>',
+					services: ['Diseño gráfico', 'Dirección de arte', '<br>'],
 					image: 'home/social.jpg'
 				},
 				iconico: {
-					title: '<br/> <span>Icónico</span>',
-					services: ['Branding', 'Dirección de arte', ' '],
+					title: '<span>Icónico</span>',
+					services: ['Branding', 'Dirección de arte', '<br>'],
 					image: 'home/iconico.jpg'
 				},
 				studio_visit: {
-					title: '<br/> <span>Studio Visit</span>',
-					services: ['Fotografía', 'Video'],
+					title: '<span>Studio Visit</span>',
+					services: ['Fotografía', 'Video', '<br>'],
 					image: 'home/studio.jpg'
 				},
 				codigo_pm: {
-					title: '<br/> <span>Código PM</span>',
-					services: ['Diseño web', 'Dirección de arte'],
+					title: '<span>Código PM</span>',
+					services: ['Diseño web', 'Dirección de arte', '<br>'],
 					image: 'home/codigo.jpg'
 				},
 				epets: {
-					title: '<br/> <span>E-pets</span>',
-					services: ['Branding', 'Dirección de arte', ' '],
+					title: '<span>E-pets</span>',
+					services: ['Branding', 'Dirección de arte', '<br>'],
 					image: 'home/epets.jpg'
 				}
 			}

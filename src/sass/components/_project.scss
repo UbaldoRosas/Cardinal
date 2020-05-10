@@ -1,23 +1,28 @@
 .project {
+    display: block;
     padding: 6.5% porcentaje($gutter-x, 1920) 3.25%;
-    text-shadow: 0px 0px 7px rgba($white, 0.4);
+    text-shadow: 0 0 7px rgba($white, 0.4);
 
     &__title {
         margin-top: 30.2%;
-        padding-bottom: 4.4%;
+        padding-bottom: 1.2%;
 
-        span::before {
-            content: "";
-            display: block;
-            width: 97px;
-            height: 3px;
-            background: #000;
-            margin-bottom: 15px;
+        .title {
+            line-height: 0.95;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 97px;
+                height: 3px;
+                background: #000;
+                margin-bottom: 15px;
+            }
         }
     }
 
     .link {
-        text-shadow: 0px 0px 4px rgba($white, 0.8);
+        text-shadow: 0 0 4px rgba($white, 0.8);
     }
 
     &__bg {
@@ -43,5 +48,68 @@
         transform: translateX(-50%);
         max-width: initial;
         height: 100%;
+    }
+
+    &__link {
+        display: inline-block;
+        padding-top: 6px;
+        font-size: 20px;
+        color: $base-color;
+        text-transform: uppercase;
+
+        &-arrow {
+            display: inline-block;
+            width: 28px;
+            height: 13px;
+            background: url('#{$img_url}flecha.png') center/contain no-repeat;
+            margin-left: 3px;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 0;
+
+        &__bg {
+            position: relative;
+            min-height: 203px;
+            max-height: 281px;
+            padding-left: 0;
+            overflow: hidden;
+
+            &-item {
+                position: static;
+                height: 0;
+                padding-top: 61%;
+            }
+        }
+
+        &__img {
+            top: 0;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        &__content {
+            padding: 10px porcentaje(23, 320) 28px;
+        }
+
+        &__services {
+            display: none;
+        }
+
+        &__title {
+            margin-top: 0 !important;
+
+            .title {
+                &::before {
+                    display: none;
+                }
+            }
+        }
     }
 }
