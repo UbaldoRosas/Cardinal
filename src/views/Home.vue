@@ -48,37 +48,41 @@ export default {
 				anteojeria: {
 					title: '<span>Anteojería<br/>de Barrio</span>',
 					services: ['Branding', 'Dirección de arte', 'Ecommerce'],
-					image: 'home/anteojeria.jpg'
+					image: 'home/anteojeria'
 				},
 				fotografia: {
 					title: '<span>Fotografía</span>',
 					services: ['Branding', 'Dirección de arte', '<br>'],
-					image: 'home/foto.jpg'
+					image: 'home/foto',
+					image_sizes: ['768']
 				},
 				social: {
 					title: '<span>Social Media</span>',
 					services: ['Diseño gráfico', 'Dirección de arte', '<br>'],
-					image: 'home/social.jpg'
+					image: 'home/social',
+					image_sizes: ['768']
 				},
 				iconico: {
 					title: '<span>Icónico</span>',
 					services: ['Branding', 'Dirección de arte', '<br>'],
-					image: 'home/iconico.jpg'
+					image: 'home/iconico'
 				},
 				studio_visit: {
 					title: '<span>Studio Visit</span>',
 					services: ['Fotografía', 'Video', '<br>'],
-					image: 'home/studio.jpg'
+					image: 'home/studio',
+					image_sizes: ['768']
 				},
 				codigo_pm: {
 					title: '<span>Código PM</span>',
 					services: ['Diseño web', 'Dirección de arte', '<br>'],
-					image: 'home/codigo.jpg'
+					image: 'home/codigo',
+					image_sizes: ['768']
 				},
 				epets: {
 					title: '<span>E-pets</span>',
 					services: ['Branding', 'Dirección de arte', '<br>'],
-					image: 'home/epets.jpg'
+					image: 'home/epets'
 				}
 			}
 		}

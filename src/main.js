@@ -4,6 +4,7 @@ import router from './router'
 import VueMobileDetection from 'vue-mobile-detection'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+import checkView from 'vue-check-view'
 
 const requireComponent = require.context(
 	// La ruta relativa de la carpeta de componentes
@@ -37,6 +38,7 @@ requireComponent.keys().forEach(fileName => {
 })
 
 Vue.use(VueMobileDetection)
+Vue.use(checkView)
 
 Vue.config.productionTip = false
 

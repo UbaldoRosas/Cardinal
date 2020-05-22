@@ -12,3 +12,6 @@ $base-font-bold: 'gilroybold';
 $base-font-black: 'gilroyextrabold';
 
 $gutter-x: 134;
+
+$ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+$ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
