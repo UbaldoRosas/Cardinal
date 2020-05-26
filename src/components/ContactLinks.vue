@@ -18,10 +18,10 @@
 		<div class="contact__externals">
 			<ul class="contact__social flex">
 				<li>
-					<a href="#" class="contact__social-item link light">facebook</a>
+					<a href="http://facebook.com" target="_blank" class="contact__social-item link light">facebook</a>
 				</li>
 				<li>
-					<a href="#" class="contact__social-item link light">instagram</a>
+					<a href="http://instagram.com" target="_blank" class="contact__social-item link light">instagram</a>
 				</li>
 				<li>
 					<a href="#" class="contact__social-item link light">behance</a>
